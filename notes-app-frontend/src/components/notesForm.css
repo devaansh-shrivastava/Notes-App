@@ -1,0 +1,176 @@
+.notesFormBG {
+  height: 100vh;
+  width: 100vw;
+
+  margin: 0;
+  position: fixed;
+  
+  background-color: #ffffff3f;
+  backdrop-filter: blur(3.5px);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+  overflow-y: auto;
+
+  z-index: 2;
+}
+
+.notesForm {
+  margin-bottom: 270px;
+
+  height: 590px;
+  width: 800px;
+
+  padding: 10px;
+
+  border-radius: 15px;
+  background-color: #464753f2;
+  color: #ffffffa0;
+
+  text-align: start;
+  justify-content: start;
+  position: relative;
+}
+
+p {
+  white-space: pre-wrap;
+}
+
+h2 {
+  margin-left: 5px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
+
+h6 {
+  margin: 0;
+  font-size: 0.8rem;
+  margin-top: 2px;
+  margin-bottom: 3px;
+}
+
+.form {
+  height: 455px;
+  width: 780px;
+
+  padding: 10px;
+  background-color: transparent;
+  color: #ffffffa0;
+}
+
+textarea {
+  white-space: pre-line;
+
+  padding: 2px;
+  border: none;
+  outline: none;
+
+  height: 100%;
+
+  font-size: 1rem;
+  padding: 3px;
+
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all;
+
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y:visible;
+  
+  color: #ffffffa0;
+}
+
+.input {
+  white-space: pre-wrap;
+}
+
+.noteTitleInput {
+  white-space: pre-wrap;
+
+  margin-bottom: 10px;
+  min-width: 775px;
+  width: 775px;
+  min-height: 40px;
+}
+
+.noteContentInput {
+  white-space: pre-wrap;
+
+  min-height: 380px;
+  min-width: 775px;
+  width: 775px;
+}
+
+.notesFormActionButtons {
+  height: 25px;
+  max-height: 25px;
+  min-width: 790px;
+  width: 790px;
+  margin-bottom: 0;
+
+  padding-left: 5px;
+  padding-right: 5px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.buttonsDiv {
+  width: 250px;
+  max-width: 250px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.noteTagsButton {
+  height: 25px;
+  width: 500px;
+
+  border-radius: 25px;
+  padding-right: 10px;
+}
+.singleNoteTagsDisplay {
+  margin-left: 5px;
+
+  min-height: 120px;
+  height: 120px;
+  max-height: 120px;
+  width: 480px;
+
+  padding-left: 10px;
+  padding-right: 10px;
+
+  border: 1px solid #000000;
+  border-radius: 20px;
+
+  overflow: hidden;
+  overflow-y: auto;
+
+  background-color: #a4a4aa;
+  color: #303030e2;
+}
+.singleNoteTags {
+  height: 40px;
+  width: 450px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items: center;
+}
+
+.noteTagText {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}

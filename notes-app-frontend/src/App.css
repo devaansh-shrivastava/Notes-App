@@ -1,0 +1,426 @@
+.App {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-color: #172121;
+  /* background-color: black; */
+}
+
+.notesGrid {
+  height: 100vh;
+  min-height: 400px;
+  background-color: #7f7b82;
+}
+
+.notesGridDisplay {
+  height: 85vh;
+  min-height: 400px;
+
+  overflow: hidden;
+  overflow-y: auto;
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.headerBar {
+  margin-top: 0;
+  height: 15vh;
+  min-height: 135px;
+
+  background-color: #172121;
+  color: #ffffffa0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hr {
+  max-height: 85vh;
+  border-color: #000000;
+}
+
+.leftSide {
+  height: 85vh;
+  width: 14.5vw;
+  min-height: 400px;
+  background-color: #7f7b82;
+  /* background-color: #7f7b82; */
+
+  padding-right: 1vw;
+
+  color: #ffffffa0;
+
+  overflow: hidden;
+  overflow-y: auto;
+}
+.rightSide {
+  height: 85vh;
+  width: 85vw;
+  min-height: 400px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.pageTitle {
+  padding-left: 3vw;
+  text-align: center;
+  align-items: center;
+
+  font-weight: 300;
+  font-size: 70px;
+}
+
+.searchBlock {
+  margin-right: 12px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.searchBar {
+  width: 17vw;
+  height: 30px;
+  min-height: 30px;
+
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  font-size: 1rem;
+  font-weight: 500;
+
+  border: none;
+  outline: none;
+  border-radius: 30px;
+
+  background-color: #ffffff7f;
+  color: #303030e2;
+}
+
+.searchBarActivated {
+  width: 17vw;
+  height: 30px;
+  min-height: 30px;
+
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  font-size: 1rem;
+  font-weight: 500;
+
+  border: none;
+  outline: none;
+  border-radius: 30px;
+
+  background-color: #ffffffb2;
+}
+ 
+
+.displayArea {
+  min-height: 400px;
+  height: 85vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.tagsDisplayArea {
+  height: 80vh;
+  max-height: 80vh;
+  width: 14vw;
+  
+  padding-top: 20px;
+  padding-left: 0.5vw;
+
+  overflow: hidden;
+  overflow-y: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content:baseline;
+  align-items: center;
+}
+
+.notesDisplayArea {
+  height: 85vh;
+  width: 77.5vw;
+  padding-right: 8vw;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.addNoteButton {
+  margin-right: 20px;
+}
+
+.singleTag {
+  width: 13vw;
+  max-width: 13vw;
+
+  border-radius: 5px;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all;
+
+  background-color: #44455490;
+}
+
+.tagText {
+  width: 10vw;
+  margin-left: 0.4vw;
+  margin-right: 0.4vw;
+
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+textarea {
+  white-space: pre-line;
+  
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
+
+.tagTextArea {
+  margin-left: 5px;
+  width: 8vw;
+
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+.singleNote {
+  height: 245px;
+  width: 235px;
+
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  background-color: #464753f2;
+  color: #ffffffa0;
+}
+
+.noteTitle {
+  height: 30px;
+  max-height: 30px;
+  width: 215px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all;
+
+  font-size: 1rem;
+}
+
+.noteContent {
+  height: 130px;
+  max-height: 130px;
+  width: 215px;
+
+  margin-bottom: 10px;
+
+  padding: 10px;
+  padding-top: 5px;
+
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all;
+
+  font-size: 1rem;
+}
+
+button {
+  font-size: 1rem;
+  font-weight: 500;
+
+  width: 6vw;
+  min-height: 30px;
+
+  border-radius: 5px;
+  border: none;
+
+  margin: 5px;
+  padding: 5px;
+
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all;
+
+  background-color: #ffffff7f;
+  color: #303030e2;
+}
+
+.searchSensitive {
+  font-size: 1rem;
+  font-weight: 500;
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 5px;
+  border: none;
+
+  margin: 15px;
+  padding: 5px;
+  background-color: #ffffffbd;
+  color: #303030e2;
+}
+
+.searchInsensitive {
+  font-size: 1rem;
+  font-weight: 500;
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 5px;
+  border: none;
+
+  margin: 15px;
+  padding: 5px;
+  background-color: #ffffff7f;
+  color: #303030e2;
+}
+
+.searchButton {
+  font-size: 1rem;
+  font-weight: 700;
+
+  width: 45px;
+  min-height: 45px;
+
+  border-radius: 5px;
+  border: none;
+
+  margin: 5px;
+
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  color: #ffffff7f;
+}
+
+.menuButton {
+  font-size: 1rem;
+  font-weight: 700;
+
+  width: 45px;
+  min-height: 45px;
+
+  border-radius: 5px;
+  border: none;
+
+  margin: 5px;
+
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  color: #ffffff7f;
+}
+
+.tagChecked {
+  height: 15px;
+  width: 15px;
+}
+
+.tagUnchecked {
+  height: 15px;
+  width: 15px;
+}
+
+.addTagButton {
+  position:fixed;
+	width:35px;
+	height:35px;
+  padding: 15px;
+
+	bottom: 120px;
+	right: 24px;
+
+	background-color: #172121;
+	color:#ffffff7f;
+  font-size: 18px;
+  font-weight: 700;
+	text-align:center;
+	
+  outline: none;
+  border: none;
+  border-radius: 20px;
+}
+
+.addNoteButton {
+  position:fixed;
+	width:35px;
+	height:35px;
+  padding: 15px;
+
+	bottom: 20px;
+	right: 3px;
+
+	background-color: #172121;
+	color:#ffffff7f;
+  font-size: 18px;
+  font-weight: 700;
+	text-align:center;
+
+  outline: none;
+  border: none;
+  border-radius: 20px;
+}
