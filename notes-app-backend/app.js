@@ -7,7 +7,7 @@ const index = require('./routes/index');
 
 const app = express();
 
-//your mongodb string in ''
+//your MongoDB string in ''
 mongoose.connect('',
   {
     useNewUrlParser: true,
